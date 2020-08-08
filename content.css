@@ -1,0 +1,14 @@
+/*
+	Changing text of Elements in table (table headers)
+	If you know the element's id, you can change it's content via content: 'text'
+*/
+
+/* Replace Money Header */
+#label-money{
+	display:none;
+}
+
+/* No header for price in Bargeld table */
+.header-money th.price-col:after {
+	content: "";
+}

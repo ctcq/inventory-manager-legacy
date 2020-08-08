@@ -1,0 +1,29 @@
+/*
+Contains style changes that occur
+on user interaction
+*/
+
+
+/* Wrong format */
+
+.wrong-input-format{
+	border : 2px solid red;
+}
+
+.last-same td.last-col{
+	color: #1e7e34;
+	font-weight: bold;
+}
+
+.last-diff td.last-col{
+	color: #dc3545;
+	font-weight: bold;
+}
+
+/*
+Articles and Prices are bold
+*/
+
+td.article-col, td.price-col,#order-total ,.order-sum, .bold{
+	font-weight: bold;
+}

@@ -1,0 +1,94 @@
+/* Controls behavior when clicking on menu icons */
+
+/* Main View 
+	Hide Columns id, count, tag
+*/
+.id-col, .tag-col, .increment-col, .decrement-col{
+	display: none;
+}
+
+/** Hide order view,*/
+
+#order-wrap, #finish-wrap, #comment-wrap{
+	display:none;
+}
+
+/* Show normal view */
+
+.article-col, .price-col, .last-col, .start-col, .finish-col, .revenue-col{
+	display: table-cell;
+}
+
+/* Show input locked view */
+.show-lock .last-col, .show-lock .start-col, .show-lock .count-col, .show-lock .finish-col, .show-lock .revenue-col{
+	display:none;
+}
+
+.show-lock #table-money{
+	display:none;
+}
+
+/* Show order view */
+.show-order .last-col, .show-order .start-col, .show-order .finish-col, .show-order .revenue-col, .show-order .count-col{
+	display:none;
+}
+
+.show-order .increment-col, .show-order .decrement-col, .show-order #order-wrap{
+	display: block;
+}
+
+.show-order #table-wrap{
+	float:left;
+	width:50%;
+}
+
+.show-order #order-wrap{
+	padding-top: 8em;
+	
+	display:block;
+	position: fixed;
+	right:1em;
+}
+
+.show-order #order-table{
+	margin: auto;
+	float:right;
+}
+
+.show-order tr.list:hover{
+	cursor: hand;
+	border:solid;
+}
+
+.show-order #table-money{
+	display:none;
+}
+
+/* Show finish view */
+.show-finish #order-wrap, .show-finish .article-table, .show-finish h5{
+	display:none;
+}
+
+.show-finish #finish-wrap{
+	display: block;
+}
+
+/*Comment View */
+.show-comment #order-wrap, .show-comment #table-wrap{
+	display:none;
+}
+
+.show-comment #comment-wrap{
+	display: block;
+}
+
+#finish-buttons-wrap{
+	text-align: center;
+}
+
+#finish-buttons-wrap img{
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 3em;
+	height: 3em;
+}

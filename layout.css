@@ -1,0 +1,118 @@
+/*Menu*/
+#menu-wrap{
+	
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index: 1; /* Menu stays on top of other content*/
+}
+
+input[type=radio]{
+	display:none;
+}
+.menu-icon{
+	margin-left: 3em;
+	margin-right: 3em;
+	
+	height: 5em;
+	width: 5em;
+}
+/*Content*/
+#content-wrap{
+	/* For distance to menu */
+	padding-top: 50px;
+	margin-top: 5em;
+	
+	/* For search input */
+	padding-bottom: 5em;
+	margin-bottom: 30px;
+}
+
+#content-wrap h5{
+	text-align: center;
+}
+
+td:hover{
+	cursor: default;
+}
+
+.article-img{
+	border : 2px solid black;
+
+	width:5em;
+	height:5em;
+}
+
+/*Liste*/
+.show-lock table{
+	width: 50%;
+}
+
+#table-money td.price-col, #table-money th.price-col{
+	display:none;
+}
+
+.price-col, .last-col{
+	text-align: center;
+}
+
+.money:after{
+	content : " €";
+}
+
+/*Order*/
+.show-order #order-wrap{
+	padding-top: 8em;
+	
+	display:block;
+	position: fixed;
+	right:1em;
+}
+
+.order-row:hover{
+	cursor: hand;
+}
+
+.order-row img{
+	height: 1em;
+	width: 1em;
+}
+
+#pay-button, #storno-button{
+	height: 2.5em;
+	width: 2.5em;
+	
+}
+
+/*Finish*/
+table#finish-table td.money{
+	text-align: center;
+}
+
+/**
+Search Input
+**/
+
+#tail-wrap{
+	position: fixed;
+
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#search{
+	width:35vw;
+	height: 3em;
+	text-align: center;
+}
+
+
+#search-result{
+	display: none;
+}
+
+#clock{
+	color: white;
+}
